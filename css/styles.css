@@ -48,3 +48,27 @@ body {
        grid-template-columns: 1fr 1fr;
        gap: 2rem;
 }
+.card {
+       border-radius: 5px;
+       background-color: #d2d8e0;
+       padding: 2rem;
+       box-shadow: 0 2px #bec0c3;
+
+}
+.card-primary {
+       border-left: 7px solid var(--color-primary);
+}
+.icon-container {
+       width: 40px;
+       height: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 2px;
+       border-radius: 50%;
+}
+.icon {
+       width: 30px;
+       height: 30px;
+       fill: #fff;
+}
