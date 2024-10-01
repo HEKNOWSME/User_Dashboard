@@ -79,3 +79,12 @@ body {
 .plan .icon {
        fill: black;
 }
+.btn {
+       padding: 1rem 2rem;
+       border-radius: 2.3rem;
+       background-color: var(--color-secondary);
+       outline: none;
+       border: 0;
+       color: #fff;
+       cursor: pointer;
+}
