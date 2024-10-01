@@ -27,7 +27,7 @@ body {
        display: grid;
 }
 .grid-1x2 {
-       grid-template-columns: 20rem auto;
+       grid-template-columns: 18rem auto;
 }
 .grid-2x1 {
        grid-template-rows: 15rem auto;
@@ -45,10 +45,11 @@ body {
        margin-bottom:2rem;
 }
 .main {
-       grid-template-columns: 1fr 1fr;
+       grid-template-columns: 1fr 200px;
        gap: 2rem;
 }
 .card {
+       height: 200px;
        border-radius: 5px;
        background-color: #d2d8e0;
        padding: 2rem;
@@ -87,4 +88,8 @@ body {
        border: 0;
        color: #fff;
        cursor: pointer;
+}
+.projects {
+       grid-template-columns: repeat(3, auto);
+       gap: 2rem;
 }
