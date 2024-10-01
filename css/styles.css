@@ -59,8 +59,6 @@ body {
        border-left: 7px solid var(--color-primary);
 }
 .icon-container {
-       width: 40px;
-       height: 40px;
        display: flex;
        justify-content: center;
        align-items: center;
@@ -68,7 +66,16 @@ body {
        border-radius: 50%;
 }
 .icon {
-       width: 30px;
-       height: 30px;
+       width: 20px;
+       height: 20px;
        fill: #fff;
+}
+.plan .plan-icons{
+       margin-top: 2rem;
+       display: flex;
+       justify-content: right;
+       gap: 1rem;
+}
+.plan .icon {
+       fill: black;
 }
