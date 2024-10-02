@@ -44,7 +44,7 @@ body {
 .main {
        grid-column: 2/4;
        grid-template-columns: repeat(3,1fr);
-       grid-template-rows: repeat(3,1fr);
+       grid-template-rows: .1fr 1fr 1fr 1fr;
        gap: 1rem
        ;
        justify-items: center;
@@ -52,11 +52,20 @@ body {
        padding: 1rem;
        background-color: #dcdee0;
 }
+.main_title {
+       grid-column: 1/4;
+       justify-self: left;
+}
 .content {
        grid-column: 4/5;
+       grid-template-rows: .1fr 1fr .1fr 1fr;
        gap: 1rem;
        background-color: #dcdee0;
        padding: 1rem;
+}
+.content_title {
+       justify-self: left;
+       margin: 0;
 }
 .card {
        border-radius: 5px;
@@ -64,6 +73,9 @@ body {
        padding: 2rem;
        box-shadow: 0 2px #bec4ca, 2px 0 #bec4ca  ;
 
+}
+.card_heading {
+       font-size: 1.6rem;
 }
 .card-primary {
        border-left: 7px solid var(--color-primary);
