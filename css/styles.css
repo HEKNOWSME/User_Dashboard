@@ -40,6 +40,7 @@ body {
        position: sticky;
        top: 0;
        background-color: #fff;
+       box-shadow: 0 5px #f0e9e9, 0 6px #bec4ca;
 }
 .main {
        grid-column: 2/4;
@@ -112,4 +113,30 @@ body {
        border: 0;
        color: #fff;
        cursor: pointer;
+}
+.input-control {
+       margin: 1rem;
+       display: flex;
+       border-radius: 1rem;
+       gap: 1rem;
+}
+.input-control label {
+       display: none;
+}
+.input-control .icon {
+       fill: black;
+}
+.input-field {
+       flex-grow: 1;
+       background: #dcdee0;
+       outline: 0;
+       border: 0;
+       border-radius: 1rem;
+}
+.profile {
+       display: flex;
+       
+}
+.profile .icon{
+      fill: black;
 }
