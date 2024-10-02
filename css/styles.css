@@ -160,3 +160,19 @@ img {
        background-color: #1992d4;
        padding: .3rem;
 }
+.media {
+       display: flex;
+       gap: 1.2rem;
+}
+
+.nav {
+       display: grid;
+       grid-template-columns: 2fr 1fr;
+       margin: 1rem;
+}
+.nav_list {
+       display: flex;
+       gap: 1rem;
+       justify-self: center;
+
+}
