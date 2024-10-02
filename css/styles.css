@@ -19,41 +19,50 @@ body {
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        font-size: 1.5rem;
 }
-.block {
-       position: fixed;
-       width: 100%;
-}
-.grid {
+.grid{
        display: grid;
 }
-.grid-1x2 {
-       grid-template-columns: 18rem auto;
-}
-.grid-2x1 {
-       grid-template-rows: 15rem auto;
+.block {
+       grid-template-columns: .5fr 1fr 1fr .5fr;
+       grid-template-rows: 10rem 1fr;
+       width: 100%;
+       max-width: 100%;
 }
 .sidebar {
-       background-color: #1992d4;
-       height: 100vh;
-}
-.container {
-       background-color: #e2e8f0;
+       justify-items: flex-start;
+       grid-row: 1/-1;
+       position: sticky;
+       top: 0;
+       background-color: var(--color-secondary);
 }
 .header {
-       background-color: #ffffff;
-       box-shadow: 0 2px #d2d8e0;
-       margin-bottom:2rem;
+       grid-column: 2/-1;
+       position: sticky;
+       top: 0;
+       background-color: #fff;
 }
 .main {
-       grid-template-columns: 1fr 200px;
-       gap: 2rem;
+       grid-column: 2/4;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: repeat(3,1fr);
+       gap: 1rem
+       ;
+       justify-items: center;
+       align-items: center;
+       padding: 1rem;
+       background-color: #dcdee0;
+}
+.content {
+       grid-column: 4/5;
+       gap: 1rem;
+       background-color: #dcdee0;
+       padding: 1rem;
 }
 .card {
-       height: 200px;
        border-radius: 5px;
-       background-color: #d2d8e0;
+       background-color: #fff;
        padding: 2rem;
-       box-shadow: 0 2px #bec0c3;
+       box-shadow: 0 2px #bec4ca, 2px 0 #bec4ca  ;
 
 }
 .card-primary {
@@ -70,6 +79,9 @@ body {
        width: 20px;
        height: 20px;
        fill: #fff;
+}
+.card{
+       margin: 1rem; 
 }
 .plan .plan-icons{
        margin-top: 2rem;
@@ -88,8 +100,4 @@ body {
        border: 0;
        color: #fff;
        cursor: pointer;
-}
-.projects {
-       grid-template-columns: repeat(3, auto);
-       gap: 2rem;
 }
