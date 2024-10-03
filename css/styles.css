@@ -95,7 +95,6 @@ img {
        gap: 1rem;
        margin: 2px;
        border-radius: 50%;
-       grid-template-rows: .3fr 1fr 1fr;
 }
 .icon {
        width: 20px;
