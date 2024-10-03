@@ -9,18 +9,25 @@
 <body>
    <div class="block grid">
     <aside class="sidebar">
-
+        <div class="sidebar_icon icon-container">
+            <svg class="icon">
+                <use href="../css/sprite.svg#dashboard"></use>
+            </svg>
+            <p class="dashboard">Dashboard</p>
+         </div>
     </aside>
     <header class="header">
         <section class="nav_header">
             <div class="input-control">
-               <div class="icon-container">
-                   <svg class="icon">
-                      <use href="../css/sprite.svg#search"></use>
-                   </svg>
-               </div>
+                <a href="#search" title="search" target="_self">
+                    <div class="icon-container">
+                        <svg class="icon">
+                           <use href="../css/sprite.svg#search"></use>
+                        </svg>
+                    </div>    
+                </a>
                <label for="search">Hidden</label>
-               <input type="text" name="search" id="search" class="input-field">
+               <input type="search" name="search" id="search" class="input-field">
             </div>
             <div class="profile">    
                <div class="icon-container">
